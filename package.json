@@ -1,12 +1,12 @@
 {
   "_args": [
     [
-      "github:seiyria/angular-bootstrap-slider#0.1.30",
+      "github:seiyria/angular-bootstrap-slider#0.1.31",
       "/Users/Matthew/programming/IDG/client/frgovernance"
     ]
   ],
   "_from": "@bower_components/angular-bootstrap-slider",
-  "_id": "@bower_components/angular-bootstrap-slider@0.1.30",
+  "_id": "@bower_components/angular-bootstrap-slider@0.1.31",
   "_inBundle": false,
   "_integrity": "sha512-ZW3ooaWJj01cHzqWWp8Ens5pqJgd8Wc0CEH142NPMEW6KYaOm7h2nLiWzW0JnGMSJACcYoNsUtIDQUmCBY9qJw==",
   "_location": "/@bower_components/angular-bootstrap-slider",
@@ -26,7 +26,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "http://star:4873/@bower_components%2fangular-bootstrap-slider/-/angular-bootstrap-slider-0.1.30.tgz",
+  "_resolved": "http://star:4873/@bower_components%2fangular-bootstrap-slider/-/angular-bootstrap-slider-0.1.31.tgz",
   "_shasum": "2b34a4090078dbc81549ad74e1c6bce4ba30e4b2",
   "_spec": "@bower_components/angular-bootstrap-slider",
   "_where": "/Users/Matthew/Desktop/temp",
@@ -65,5 +65,5 @@
     "test": "npm run protractor",
     "update-webdriver": "webdriver-manager update"
   },
-  "version": "0.1.30"
+  "version": "0.1.31"
 }
