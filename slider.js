@@ -1,12 +1,12 @@
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['bootstrap-slider', 'angular'], factory);
+        define(['angular', 'bootstrap-slider'], factory);
     } else if (typeof module === 'object' && module.exports) {
-        module.exports = factory(require('bootstrap-slider'), require('angular'));
+        module.exports = factory(require('angular'), require('bootstrap-slider'));
     } else if (window) {
-        factory(window.Slider);
+        factory(window.angular, window.Slider);
     }
-})(function (Slider) {
+})(function (angular, Slider) {
 
 angular.module('ui.bootstrap-slider', [])
     .directive('slider', ['$parse', '$timeout', '$rootScope', function ($parse, $timeout, $rootScope) {
@@ -28,10 +28,8 @@ angular.module('ui.bootstrap-slider', [])
                 ticksLabels: '=',
                 ticksSnapBounds: '=',
                 ticksPositions: '=',
-                ticksTooltip: "=",
                 scale: '=',
                 focus: '=',
-                rangeHighlights: '=',
                 formatter: '&',
                 onStartSlide: '&',
                 onStopSlide: '&',
@@ -72,8 +70,6 @@ angular.module('ui.bootstrap-slider', [])
                     setOption('ticks_labels', $scope.ticksLabels);
                     setOption('ticks_snap_bounds', $scope.ticksSnapBounds);
                     setOption('ticks_positions', $scope.ticksPositions);
-                    setOption('ticks_tooltip', $scope.ticksTooltip, false);
-                    setOption('rangeHighlights', $scope.rangeHighlights);
                     setOption('scale', $scope.scale, 'linear');
                     setOption('focus', $scope.focus);
 
@@ -127,6 +123,17 @@ angular.module('ui.bootstrap-slider', [])
                         options.formatter = function(value) {
                             return $scope.formatter({value: value});
                         }
+                    }
+
+                    // check if slider jQuery plugin exists
+                    if ('$' in window && $.fn.slider) {
+                        // adding methods to jQuery slider plugin prototype
+                        $.fn.slider.constructor.prototype.disable = function () {
+                            this.picker.off();
+                        };
+                        $.fn.slider.constructor.prototype.enable = function () {
+                            this.picker.on();
+                        };
                     }
 
                     // destroy previous slider to reset all options
@@ -203,7 +210,7 @@ angular.module('ui.bootstrap-slider', [])
                 }
 
 
-                var watchers = ['min', 'max', 'step', 'range', 'scale', 'ticksLabels', 'ticks', 'rangeHighlights'];
+                var watchers = ['min', 'max', 'step', 'range', 'scale', 'ticksLabels'];
                 angular.forEach(watchers, function (prop) {
                     $scope.$watch(prop, function () {
                         slider = initSlider();
@@ -220,5 +227,6 @@ angular.module('ui.bootstrap-slider', [])
                 });
             }
         };
-    }]);
+    }])
+;
 });

@@ -1,37 +1,69 @@
 {
-  "name": "angular-bootstrap-slider",
-  "version": "0.1.26",
+  "_args": [
+    [
+      "github:seiyria/angular-bootstrap-slider#0.1.30",
+      "/Users/Matthew/programming/IDG/client/frgovernance"
+    ]
+  ],
+  "_from": "@bower_components/angular-bootstrap-slider",
+  "_id": "@bower_components/angular-bootstrap-slider@0.1.30",
+  "_inBundle": false,
+  "_integrity": "sha512-ZW3ooaWJj01cHzqWWp8Ens5pqJgd8Wc0CEH142NPMEW6KYaOm7h2nLiWzW0JnGMSJACcYoNsUtIDQUmCBY9qJw==",
+  "_location": "/@bower_components/angular-bootstrap-slider",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@bower_components/angular-bootstrap-slider",
+    "name": "@bower_components/angular-bootstrap-slider",
+    "escapedName": "@bower_components%2fangular-bootstrap-slider",
+    "scope": "@bower_components",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://star:4873/@bower_components%2fangular-bootstrap-slider/-/angular-bootstrap-slider-0.1.30.tgz",
+  "_shasum": "2b34a4090078dbc81549ad74e1c6bce4ba30e4b2",
+  "_spec": "@bower_components/angular-bootstrap-slider",
+  "_where": "/Users/Matthew/Desktop/temp",
+  "author": {
+    "name": "Kyle Kemp",
+    "email": "kyle@seiyria.com"
+  },
+  "bugs": {
+    "url": "https://github.com/seiyria/angular-bootstrap-slider/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
   "description": "An angular directive for seiyria-bootstrap-slider",
-  "main": "slider.js",
   "devDependencies": {
     "http-server": "^0.11.1",
     "jasmine-core": "^2.3.4",
     "karma": "^3.1.1",
     "karma-chrome-launcher": "^0.2.1",
     "karma-jasmine": "^0.3.6",
-    "protractor": "^5.4.1",
-    "bootstrap-slider": "^10.3.2",
-    "angular": ">= 1.3 <=1.7",
-    "bootstrap": "~3.3.6",
-    "jquery": "3.3.1"
+    "protractor": "^3.0.0"
   },
-  "dependencies": {},
-  "scripts": {
-    "start": "http-server -a localhost -p 31337 -c-1",
-    "test": "npm run protractor",
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update",
-    "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor e2e-tests/protractor.conf.js"
-  },
+  "homepage": "https://github.com/seiyria/angular-bootstrap-slider#readme",
+  "license": "MIT",
+  "main": "slider.js",
+  "name": "@bower_components/angular-bootstrap-slider",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seiyria/angular-bootstrap-slider.git"
   },
-  "author": "Kyle Kemp <kyle@seiyria.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/seiyria/angular-bootstrap-slider/issues"
+  "scripts": {
+    "preprotractor": "npm run update-webdriver",
+    "preupdate-webdriver": "npm install",
+    "protractor": "protractor e2e-tests/protractor.conf.js",
+    "start": "http-server -a localhost -p 31337 -c-1",
+    "test": "npm run protractor",
+    "update-webdriver": "webdriver-manager update"
   },
-  "homepage": "https://github.com/seiyria/angular-bootstrap-slider#readme"
+  "version": "0.1.30"
 }
