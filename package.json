@@ -1,14 +1,13 @@
 {
   "_args": [
     [
-      "github:seiyria/angular-bootstrap-slider#0.1.31",
+      "github:MareoRaft/angular-bootstrap-slider#0.1.31",
       "/Users/Matthew/programming/IDG/client/frgovernance"
     ]
   ],
   "_from": "@bower_components/angular-bootstrap-slider",
   "_id": "@bower_components/angular-bootstrap-slider@0.1.31",
   "_inBundle": false,
-  "_integrity": "sha512-ZW3ooaWJj01cHzqWWp8Ens5pqJgd8Wc0CEH142NPMEW6KYaOm7h2nLiWzW0JnGMSJACcYoNsUtIDQUmCBY9qJw==",
   "_location": "/@bower_components/angular-bootstrap-slider",
   "_phantomChildren": {},
   "_requested": {
@@ -27,15 +26,11 @@
     "/"
   ],
   "_resolved": "http://star:4873/@bower_components%2fangular-bootstrap-slider/-/angular-bootstrap-slider-0.1.31.tgz",
-  "_shasum": "2b34a4090078dbc81549ad74e1c6bce4ba30e4b2",
   "_spec": "@bower_components/angular-bootstrap-slider",
   "_where": "/Users/Matthew/Desktop/temp",
   "author": {
     "name": "Kyle Kemp",
     "email": "kyle@seiyria.com"
-  },
-  "bugs": {
-    "url": "https://github.com/seiyria/angular-bootstrap-slider/issues"
   },
   "bundleDependencies": false,
   "dependencies": {},
@@ -49,13 +44,13 @@
     "karma-jasmine": "^0.3.6",
     "protractor": "^3.0.0"
   },
-  "homepage": "https://github.com/seiyria/angular-bootstrap-slider#readme",
+  "homepage": "https://github.com/MareoRaft/angular-bootstrap-slider#readme",
   "license": "MIT",
   "main": "slider.js",
   "name": "@bower_components/angular-bootstrap-slider",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seiyria/angular-bootstrap-slider.git"
+    "url": "git+https://github.com/MareoRaft/angular-bootstrap-slider.git"
   },
   "scripts": {
     "preprotractor": "npm run update-webdriver",
